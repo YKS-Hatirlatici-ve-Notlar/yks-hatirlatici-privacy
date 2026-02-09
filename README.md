@@ -1,1 +1,0 @@
-# yks-hatirlatici-privacy

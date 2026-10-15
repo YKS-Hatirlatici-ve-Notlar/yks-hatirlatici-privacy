@@ -4,6 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      var ua = navigator.userAgent || "";
+      var isIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+      var isAndroid = /Android/i.test(ua);
+      if (isIOS) {
+        window.location.replace("https://apps.apple.com/app/id6757983171");
+        return;
+      }
+      if (isAndroid) {
+        window.location.replace("https://play.google.com/store/apps/details?id=com.ykshatirlatici");
+      }
+    })();
+  </script>
   <meta name="description"
     content="YKS 2026 yolculuğunda soru takibi, akıllı notlar, sınav geri sayımı ve widget desteğiyle planlı çalışmayı daha kolay ve motive edici hale getir.">
   <title>YKS Hatırlatıcı | Hedefine Bir Adım Daha Yakın</title>

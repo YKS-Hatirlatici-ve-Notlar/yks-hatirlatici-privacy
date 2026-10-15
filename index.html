@@ -7,6 +7,9 @@
   <script>
     (function () {
       var ua = navigator.userAgent || "";
+      var referrer = document.referrer || "";
+      var fromInstagram = /Instagram/i.test(ua) || /instagram\.com|com\.instagram/i.test(referrer);
+      if (!fromInstagram) return;
       var isIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
       var isAndroid = /Android/i.test(ua);
       if (isIOS) {
